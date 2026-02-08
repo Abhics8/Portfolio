@@ -7,7 +7,57 @@
    - Section Dividers
    - Custom Cursor
    - Gradient Mesh Background
+   - Lumina AI Special Styling
    =================================== */
+
+/* Lumina AI - Animated Gradient Border */
+.lumina-card {
+    position: relative;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    animation: luminaGlow 3s ease-in-out infinite;
+}
+
+.lumina-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #4facfe, #667eea);
+    background-size: 300% 300%;
+    border-radius: 15px;
+    z-index: -1;
+    animation: gradientShift 4s ease infinite;
+    filter: blur(8px);
+    opacity: 0.7;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes luminaGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(102, 126, 234, 0.3), 0 0 40px rgba(118, 75, 162, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(102, 126, 234, 0.5), 0 0 60px rgba(118, 75, 162, 0.3);
+    }
+}
 
 /* Featured Badge */
 .featured-badge {
@@ -358,5 +408,11 @@ button {
         right: 10px;
         padding: 0.3rem 0.8rem;
         font-size: 0.7rem;
+    }
+
+    /* Reduce animation intensity on mobile */
+    .lumina-card::before {
+        filter: blur(4px);
+        opacity: 0.5;
     }
 }
