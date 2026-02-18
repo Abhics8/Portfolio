@@ -217,57 +217,86 @@
                 <button class="filter-btn" data-filter="fullstack">Full Stack</button>
             </div>
 
-            <div class="projects-grid">
-                <!-- Project 1: Lumina AI (Featured) -->
-                <div class="project-card lumina-card" data-category="cv">
-                    <span class="featured-badge">⭐ Featured</span>
-                    <div class="project-header">
-                        <h3 class="project-title">Lumina AI - Visual Commerce Engine</h3>
-                        <div class="project-tags">
-                            <span class="tag">OWLv2</span>
-                            <span class="tag">CLIP</span>
-                            <span class="tag">Qdrant</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">Next.js 15</span>
-                            <span class="tag">Redis</span>
-                            <span class="tag">Docker</span>
+            <!-- Lumina AI - Standalone Hero Showcase -->
+            <div class="lumina-hero-showcase" data-category="cv">
+                <div class="lumina-hero-inner">
+                    <div class="lumina-hero-badge">🔮 Most Ambitious Project</div>
+                    <div class="lumina-hero-content">
+                        <div class="lumina-hero-left">
+                            <h3 class="lumina-hero-title">Lumina AI</h3>
+                            <p class="lumina-hero-subtitle">Visual Commerce Engine</p>
+                            <p class="lumina-hero-desc">
+                                <strong>Solving the $500B visual search problem in e-commerce.</strong>
+                                AI-powered engine that understands fashion through computer vision — zero-shot object
+                                detection,
+                                style &amp; vibe analysis, and semantic search with two-stage retrieval and
+                                cross-encoder reranking.
+                                Production-grade with CI/CD, Redis caching, and hybrid search filters.
+                            </p>
+                            <div class="lumina-hero-tags">
+                                <span class="tag">OWLv2</span>
+                                <span class="tag">CLIP</span>
+                                <span class="tag">Qdrant</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Next.js 15</span>
+                                <span class="tag">Redis</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <div class="project-buttons" style="margin-top: 1.5rem;">
+                                <a href="https://huggingface.co/spaces/Ab0202000/lumina-ai-demo" target="_blank"
+                                    class="btn-demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/AB0204/Lumina-AI" target="_blank" class="btn-github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <p class="project-description">
-                        <strong>AI-powered visual commerce engine</strong> solving the $500B visual search problem in
-                        e-commerce.
-                        Features zero-shot object detection with OWLv2, style analysis using CLIP, and semantic product
-                        search
-                        with two-stage retrieval and cross-encoder reranking. Production-grade with CI/CD, Redis
-                        caching,
-                        hybrid search filters, and full Docker stack.
-                    </p>
-                    <div class="project-footer">
-                        <div class="project-buttons">
-                            <a href="https://huggingface.co/spaces/Ab0202000/lumina-ai-demo" target="_blank"
-                                class="btn-demo">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                                </svg>
-                                Live Demo
-                            </a>
-                            <a href="https://github.com/AB0204/Lumina-AI" target="_blank" class="btn-github">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                                GitHub
-                            </a>
+                        <div class="lumina-hero-right">
+                            <div class="lumina-hero-metrics">
+                                <div class="lumina-metric">
+                                    <span class="metric-value">7+</span>
+                                    <span class="metric-label">AI Models</span>
+                                </div>
+                                <div class="lumina-metric">
+                                    <span class="metric-value">&lt;200ms</span>
+                                    <span class="metric-label">Search Latency</span>
+                                </div>
+                                <div class="lumina-metric">
+                                    <span class="metric-value">2-Stage</span>
+                                    <span class="metric-label">Retrieval</span>
+                                </div>
+                                <div class="lumina-metric">
+                                    <span class="metric-value">Full</span>
+                                    <span class="metric-label">Docker Stack</span>
+                                </div>
+                            </div>
+                            <div class="lumina-hero-highlights">
+                                <div class="highlight-item">✦ Zero-shot fashion detection (OWLv2)</div>
+                                <div class="highlight-item">✦ Style &amp; vibe analysis (CLIP)</div>
+                                <div class="highlight-item">✦ Cross-encoder reranking pipeline</div>
+                                <div class="highlight-item">✦ Hybrid search: vector + structured filters</div>
+                                <div class="highlight-item">✦ Live on Hugging Face Spaces</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="projects-grid">
                 <!-- Project 1: FraudGuard -->
                 <div class="project-card" data-category="ml">
                     <span class="featured-badge">Featured</span>
@@ -392,6 +421,50 @@
                                 Live Demo
                             </a>
                             <a href="https://github.com/AB0204/SentiStock-Analytics" target="_blank" class="btn-github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: UrbanKart -->
+                <div class="project-card" data-category="fullstack">
+                    <span class="featured-badge">Featured</span>
+                    <div class="project-header">
+                        <h3 class="project-title">UrbanKart - E-Commerce Platform</h3>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Vite</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Scalable full-stack e-commerce platform supporting 1000+ concurrent users with &lt;100ms API
+                        response time. Features JWT authentication, role-based access control, MySQL triggers for
+                        inventory automation, and type-safe React frontend with Vite optimization achieving &lt;2s load
+                        time.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-buttons">
+                            <a href="https://urbankart-store.surge.sh" target="_blank" class="btn-demo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/AB0204/UrbanKart" target="_blank" class="btn-github">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">

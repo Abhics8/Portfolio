@@ -7,8 +7,223 @@
    - Section Dividers
    - Custom Cursor
    - Gradient Mesh Background
-   - Lumina AI Special Styling
+   - Lumina AI Hero Showcase
    =================================== */
+
+/* ===== Lumina AI Hero Showcase ===== */
+.lumina-hero-showcase {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(135deg,
+            rgba(102, 126, 234, 0.12) 0%,
+            rgba(118, 75, 162, 0.12) 50%,
+            rgba(240, 147, 251, 0.08) 100%);
+    border: 2px solid;
+    border-image: linear-gradient(135deg, #667eea, #764ba2, #f093fb) 1;
+    overflow: hidden;
+    animation: luminaShowcasePulse 4s ease-in-out infinite;
+}
+
+.lumina-hero-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(102, 126, 234, 0.05),
+            rgba(118, 75, 162, 0.08),
+            rgba(240, 147, 251, 0.05),
+            transparent);
+    animation: heroShimmer 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes heroShimmer {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes luminaShowcasePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 8px 40px rgba(102, 126, 234, 0.25),
+            0 0 80px rgba(118, 75, 162, 0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 12px 60px rgba(102, 126, 234, 0.35),
+            0 0 100px rgba(118, 75, 162, 0.25);
+    }
+}
+
+.lumina-hero-inner {
+    position: relative;
+    z-index: 1;
+    padding: 2.5rem 3rem;
+}
+
+.lumina-hero-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+}
+
+.lumina-hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.lumina-hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #667eea, #a78bfa, #f093fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.3rem;
+    line-height: 1.1;
+}
+
+.lumina-hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.lumina-hero-desc {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.lumina-hero-desc strong {
+    color: var(--text-primary);
+}
+
+.lumina-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lumina-hero-tags .tag {
+    background: rgba(102, 126, 234, 0.15);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    color: #a78bfa;
+}
+
+.lumina-hero-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.lumina-metric {
+    background: rgba(102, 126, 234, 0.08);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.lumina-metric:hover {
+    background: rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #667eea, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.2rem;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.lumina-hero-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.highlight-item {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    background: rgba(102, 126, 234, 0.05);
+    border-left: 2px solid #764ba2;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    background: rgba(102, 126, 234, 0.12);
+    border-left-color: #a78bfa;
+    transform: translateX(4px);
+}
+
+/* Responsive - Lumina Hero */
+@media (max-width: 768px) {
+    .lumina-hero-inner {
+        padding: 1.5rem;
+    }
+
+    .lumina-hero-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .lumina-hero-title {
+        font-size: 2rem;
+    }
+
+    .lumina-hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
 
 /* Lumina AI - Bold Gradient Background */
 .lumina-card {
