@@ -79,6 +79,8 @@
     position: relative;
     z-index: 1;
     padding: 2.5rem 3rem;
+    background: rgba(10, 10, 30, 0.85);
+    border-radius: 18px;
 }
 
 .lumina-hero-badge {
@@ -115,21 +117,21 @@
 
 .lumina-hero-subtitle {
     font-size: 1.15rem;
-    color: var(--text-secondary);
-    font-weight: 500;
+    color: #c4b5fd;
+    font-weight: 600;
     margin-bottom: 1.2rem;
     letter-spacing: 0.5px;
 }
 
 .lumina-hero-desc {
-    color: var(--text-secondary);
+    color: #d1d5db;
     line-height: 1.7;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
 
 .lumina-hero-desc strong {
-    color: var(--text-primary);
+    color: #f3f4f6;
 }
 
 .lumina-hero-tags {
@@ -140,9 +142,10 @@
 }
 
 .lumina-hero-tags .tag {
-    background: rgba(102, 126, 234, 0.15);
-    border: 1px solid rgba(102, 126, 234, 0.3);
-    color: #a78bfa;
+    background: rgba(102, 126, 234, 0.25);
+    border: 1px solid rgba(167, 139, 250, 0.5);
+    color: #c4b5fd;
+    font-weight: 600;
 }
 
 .lumina-hero-metrics {
@@ -153,8 +156,8 @@
 }
 
 .lumina-metric {
-    background: rgba(102, 126, 234, 0.08);
-    border: 1px solid rgba(102, 126, 234, 0.2);
+    background: rgba(102, 126, 234, 0.15);
+    border: 1px solid rgba(167, 139, 250, 0.35);
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
@@ -162,26 +165,23 @@
 }
 
 .lumina-metric:hover {
-    background: rgba(102, 126, 234, 0.15);
+    background: rgba(102, 126, 234, 0.25);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
 }
 
 .metric-value {
     display: block;
     font-size: 1.4rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #667eea, #a78bfa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #c4b5fd;
     margin-bottom: 0.2rem;
 }
 
 .metric-label {
     display: block;
     font-size: 0.75rem;
-    color: var(--text-secondary);
+    color: #9ca3af;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -194,18 +194,19 @@
 }
 
 .highlight-item {
-    color: var(--text-secondary);
+    color: #d1d5db;
     font-size: 0.9rem;
     padding: 0.5rem 0.8rem;
-    background: rgba(102, 126, 234, 0.05);
-    border-left: 2px solid #764ba2;
+    background: rgba(102, 126, 234, 0.1);
+    border-left: 3px solid #a78bfa;
     border-radius: 0 8px 8px 0;
     transition: all 0.3s ease;
 }
 
 .highlight-item:hover {
-    background: rgba(102, 126, 234, 0.12);
-    border-left-color: #a78bfa;
+    background: rgba(102, 126, 234, 0.2);
+    border-left-color: #c4b5fd;
+    color: #f3f4f6;
     transform: translateX(4px);
 }
 
