@@ -1,6 +1,6 @@
 # Personal Portfolio Website 🌐
 
-[![Deployed](https://img.shields.io/badge/Deployed-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://yourusername.github.io)
+[![Deployed](https://img.shields.io/badge/Deployed-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://ab0204.github.io/Portfolio/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -186,7 +186,7 @@ graph LR
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Portfolio.git
+   git clone https://github.com/AB0204/Portfolio.git
    cd Portfolio
    ```
 
@@ -219,7 +219,7 @@ graph LR
    git add .
    git commit -m "Initial portfolio"
    git branch -M main
-   git remote add origin https://github.com/yourusername/yourusername.github.io.git
+   git remote add origin https://github.com/AB0204/AB0204.github.io.git
    git push -u origin main
    ```
 
@@ -230,7 +230,7 @@ graph LR
    - Save
 
 4. **Access live site**
-   - Visit `https://yourusername.github.io`
+   - Visit `https://ab0204.github.io/Portfolio/`
    - Takes 2-5 minutes for first deployment
 
 ---
@@ -348,11 +348,11 @@ This portfolio design is open-source under the MIT License. Feel free to use as 
 **Abhi Bhardwaj**
 
 - 💼 LinkedIn: [linkedin.com/in/abhi-bhardwaj](https://linkedin.com/in/abhi-bhardwaj)
-- 📧 Email: abhi@example.com
-- 🐙 GitHub: [github.com/yourusername](https://github.com/yourusername)
+- 📧 Email: github.com/AB0204
+- 🐙 GitHub: [github.com/AB0204](https://github.com/AB0204)
 - 📝 Blog: [hashnode.com/@abhiibhardwaj01](https://hashnode.com/@abhiibhardwaj01)
 
-**Live Portfolio**: [yourusername.github.io](https://yourusername.github.io)
+**Live Portfolio**: [yourusername.github.io](https://ab0204.github.io/Portfolio/)
 
 ---
 
