@@ -547,8 +547,8 @@ section::before {
     width: 100%;
     margin-bottom: 1.5rem;
     border-radius: 12px;
-    background: #111;
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    background: transparent;
+    border: none;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -562,11 +562,7 @@ section::before {
 }
 
 .browser-header {
-    background: #1e1e1e;
-    padding: 8px 12px;
-    display: flex;
-    gap: 6px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: none;
 }
 
 .browser-header .dot {
@@ -583,9 +579,9 @@ section::before {
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     object-fit: cover;
-    background: #0a0a0a;
+    background: transparent;
 }
 
 /* Skills Section */
