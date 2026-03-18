@@ -542,6 +542,52 @@ section::before {
     transform: translateX(5px);
 }
 
+/* Project Visual Frames */
+.project-visual-frame {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    background: #111;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.project-card:hover .project-visual-frame {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+}
+
+.browser-header {
+    background: #1e1e1e;
+    padding: 8px 12px;
+    display: flex;
+    gap: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.browser-header .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.browser-header .dot.red { background: #ff5f56; }
+.browser-header .dot.yellow { background: #ffbd2e; }
+.browser-header .dot.green { background: #27c93f; }
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background: #0a0a0a;
+}
+
 /* Skills Section */
 .skills {
     background: var(--background-light);
