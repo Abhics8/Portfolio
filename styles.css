@@ -212,6 +212,7 @@ body {
     background-clip: text;
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
+    min-height: 2.5rem;
 }
 
 .hero-description {

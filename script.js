@@ -440,19 +440,45 @@ window.addEventListener('scroll', () => {
 // TYPING ANIMATION FOR HERO SUBTITLE
 // ===================================
 const heroSubtitle = document.querySelector('.hero-subtitle');
-const subtitleText = 'AI & ML Engineer | Building Intelligent Systems';
-let charIndex = 0;
+if (heroSubtitle) {
+    const subtitlePhrases = [
+        'AI & ML Engineer',
+        'Building Intelligent Systems',
+        'LLMs & RAG Architectures',
+        'PyTorch & Deep Learning',
+        'Production MLOps & Distributed Systems'
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
-function typeText() {
-    if (charIndex < subtitleText.length) {
-        heroSubtitle.textContent += subtitleText.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeText, 80);
+    function typeLoop() {
+        const currentPhrase = subtitlePhrases[phraseIndex];
+
+        if (isDeleting) {
+            heroSubtitle.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            heroSubtitle.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 40 : 80;
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            typeSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % subtitlePhrases.length;
+            typeSpeed = 400;
+        }
+
+        setTimeout(typeLoop, typeSpeed);
     }
-}
 
-// Start typing after intro screen or page load
-setTimeout(typeText, 1500);
+    setTimeout(typeLoop, 1500);
+}
 
 // ===================================
 // PROJECT CATEGORY FILTERS
